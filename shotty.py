@@ -12,9 +12,10 @@ def list_instances():
             i.id,
             i.instance_type,
             i.placement['AvailabilityZone'],
-            i.state['Name'])))
+            i.state['Name'],
+            i.public_dns_name)))
 
-        return
+#        return
 
 if __name__ == '__main__':
     list_instances()
